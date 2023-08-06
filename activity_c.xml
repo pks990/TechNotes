@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notes">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:text="@string/notes2"
+        android:textSize="40sp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back"
+        android:src="@drawable/arrow_back_"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="Menu button"/>
+
+
+    <Button
+        android:id="@+id/sub1"
+        android:layout_width="350dp"
+        android:layout_height="85dp"
+        android:text="@string/C"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/sub2"
+        android:layout_width="350dp"
+        android:layout_height="85dp"
+        android:text="@string/CPP"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sub1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <Button
+        android:id="@+id/sub3"
+        android:layout_width="350dp"
+        android:layout_height="85dp"
+        android:text="@string/Java"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sub2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <Button
+        android:id="@+id/sub4"
+        android:layout_width="350dp"
+        android:layout_height="85dp"
+        android:text="@string/HTML"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sub3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="100dp"
+            android:id="@+id/Homebtn"
+            android:src="@drawable/home"
+            android:contentDescription="Home button"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="80dp"
+            android:id="@+id/Searchbtn"
+            android:src="@drawable/search"
+            android:contentDescription="Search button"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/Profilebtn"
+            android:src="@drawable/person"
+            android:contentDescription="Profile button"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

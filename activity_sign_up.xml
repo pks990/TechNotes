@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bc"
+    tools:context=".SignUp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signUp"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="40dp" />
+
+    <EditText
+        android:id="@+id/edtname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:background="#2F010202"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="200dp"
+        android:padding="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:drawableLeft="@drawable/name"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/name"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/edtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtname"
+        android:hint="@string/email"
+        android:background="#2F010202"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:padding="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:drawableLeft="@drawable/email"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/email"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/edtmob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtemail"
+        android:hint="@string/mob"
+        android:background="#2F010202"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:padding="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:drawableLeft="@drawable/phone"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/phone"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/edtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtmob"
+        android:hint="@string/password"
+        android:background="#2F010202"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:padding="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        android:autofillHints=""
+        android:drawableStart="@drawable/lock"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtpassword"
+        android:layout_marginLeft="180dp"
+        android:visibility="gone" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_ac"
+        android:layout_below="@id/edtpassword"
+        android:text="@string/Account"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#DD03A9F4"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_account"
+        android:text="@string/HaveAccount"
+        android:layout_below="@id/create_ac"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

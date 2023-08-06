@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bc"
+    tools:context=".TechNotes">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:text="@string/Welcome"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="40dp" />
+
+    <EditText
+        android:id="@+id/edtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:background="#2F010202"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="225dp"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:drawableLeft="@drawable/email"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/email"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/edtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:background="#2F010202"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="300dp"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        android:autofillHints=""
+        android:drawableStart="@drawable/lock"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgot_password"
+        android:text="@string/Forgot"
+        android:layout_below="@id/edtpassword"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="6dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="65dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/error"
+        android:text="@string/error_while_loading_in"
+        android:textColor="#ED0C0C"
+        android:layout_above="@+id/loginbtn"
+        android:visibility="gone"/>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtpassword"
+        android:layout_marginLeft="180dp"
+        android:visibility="gone" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginbtn"
+        android:layout_below="@id/forgot_password"
+        android:text="@string/Login"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#DD03A9F4"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_account"
+        android:text="@string/CreateAccount"
+        android:layout_below="@id/loginbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:textSize="20sp"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

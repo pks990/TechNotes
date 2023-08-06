@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:text="@string/home"
+        android:textSize="40sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back"
+        android:src="@drawable/arrow_back_"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="Menu button"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:text="@string/Hellon"
+        android:textSize="40sp"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/black"/>
+
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="201dp"
+        android:layout_height="142dp"
+        android:layout_below="@id/back"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#B9919090"
+        android:src="@drawable/app" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:id="@+id/about"
+        android:layout_below="@id/profile"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/black"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="1"
+        android:layout_below="@+id/about"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="@string/Detail"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/black"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"/>
+
+        <!-- Add additional TextViews or other views here as needed -->
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="100dp"
+            android:id="@+id/Homebtn"
+            android:src="@drawable/home"
+            android:contentDescription="Home button"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="80dp"
+            android:id="@+id/Searchbtn"
+            android:src="@drawable/search"
+            android:contentDescription="Search button"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/Profilebtn"
+            android:src="@drawable/person"
+            android:contentDescription="Profile button"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
